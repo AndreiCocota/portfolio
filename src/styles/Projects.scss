@@ -1,0 +1,102 @@
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    .projects-title {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .portfolio {
+        width: 90%;
+        .projects-navbar {
+            display: flex;
+            justify-content: center;
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                
+                justify-content: flex-end;    
+                        
+                .list-navbar {
+                    margin-right:80px;
+                    margin-top: 50px;
+                    padding: 10px 15px;
+                    
+                    a {
+
+                        text-decoration: none;
+                        color:black;
+                        font-weight: 600;
+
+                        
+                    }
+                    &__active {
+                        
+                        margin-right:80px;
+                        margin-top: 50px;
+                        padding: 10px 15px;
+                        background-color: rgb(221, 11, 11) ;
+
+                        a {
+                            
+                        text-decoration: none;
+                        color:white;
+                        font-weight: 600;
+                        }
+                    }
+                }
+               
+            }
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .projects-container {
+        .projects-title {
+            > h1 {
+                font-size: 32px;
+            }
+        }
+        .portfolio {
+            .projects-navbar {
+                ul {
+                    padding-left: 0px;
+                    .list-navbar {
+                        margin-right: 5px;
+                        padding: 5px 10px;
+                    
+                        a {
+                            font-size: 12px;
+                        }
+                    
+                        &__active {
+                            margin-right: 5px;
+                            padding: 5px 10px;
+
+                        
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+}

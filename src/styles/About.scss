@@ -1,0 +1,92 @@
+$red:#d72323;
+
+.about-container {
+    margin-bottom: 200px;
+    .about-title {
+        margin-top: 50px;
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .about-details {
+        margin-top: 100px;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        > img {
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        .profile-text {
+            width: 47%;
+            align-self: center;
+            p {        
+                font-size: 18px;
+                font-weight: 400;
+
+                span > a {
+                    color:red;
+                    text-decoration: none;
+                }
+            }
+            
+            .button-red {
+                display: inline-block;
+                width: 210px;
+                color: white;
+                background-color: $red;
+                padding: 15px 25px;
+                margin: 20px 5px 5px 0;
+                border-radius: 5px;
+                border: 1px solid $red;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-weight: 400;
+                text-align: center;   
+                
+                transition: all 0.2s;
+                    &:hover {
+                    background-color: transparent;
+                    border-color: $red;
+                    color: $red;
+                    }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        .about-title {
+             > h1 {
+                font-size: 32px;
+            }
+        }
+        .about-details {
+            img {
+                width: 250px;
+            }
+            .profile-text {
+                width: 90%;
+                text-align: center;
+                margin-top: 50px;
+
+                p {
+                 font-size: 16px;
+                }
+                .button-red {
+                    width: 200px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

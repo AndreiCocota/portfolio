@@ -1,0 +1,80 @@
+$red:#d72323;
+
+.home-container {
+    width: 100%;
+    background: url('../images/home-background.jpg') ;
+    background-size: cover;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1 {
+        color:white;
+        font-size: 56px;
+        font-weight: 600;
+        margin-left: 80px;
+        margin-bottom: 0;
+        .red-span {
+            color: $red;
+        }
+
+    }
+    p {
+        margin-left: 80px;
+        margin-top: 10px;
+        color: white;
+        font-size: 32px;
+        
+    }
+
+    .button-red {
+        display: inline-block;
+        width: 210px;
+        color: white;
+        background-color: $red;
+        padding: 15px 25px;
+        margin: 0 5px 5px 80px;
+        border-radius: 5px;
+        border: 1px solid $red;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 400;
+        text-align: center;   
+        
+        transition: all 0.2s;
+            &:hover {
+            background-color: transparent;
+            border-color: $red;
+            color: $red;
+            }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .home-container {
+        text-align: center;
+        h1 {
+            margin-left: 0;
+            font-size: 32px;
+            flex-wrap: wrap;
+            .red-span {
+                margin-left: 60px;
+                margin-right: 55px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-left: 0;
+        }
+
+        .button-red {
+            width: 200px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    }
+
+}

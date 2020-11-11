@@ -1,0 +1,29 @@
+.card {
+    width: 350px;
+    margin-top: 40px;
+
+    .website-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+    .website-img {
+        width:350px; 
+        height:300px;
+        position: relative;
+
+        &:hover {
+            opacity: 15%;
+            transition: 600ms ease-in-out;
+        }   
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        right: 7px;
+    }
+}
